@@ -1,3 +1,6 @@
+#not complete
+
+
 VALID_CHOICES = %w(rock paper scissors spock lizard)
 
 player_win_count = 0
@@ -17,7 +20,7 @@ end
 
 def display_results(player, computer)
   if win?(player, computer)
-    player_win_count = player_win_count + 1
+    player_win_count += 1
     prompt("You won!")
   elsif win?(computer, player)
     prompt("Computer won!")
